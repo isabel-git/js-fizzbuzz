@@ -26,7 +26,7 @@ for (var i = 0; i <= 100 ; i++) {
     }
   }
   // output
-  container = container + testo + "<br>";
+  container = container + "<p>" + testo + "</p>";
   stampa.innerHTML = container;
   console.log(testo);
 }

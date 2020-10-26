@@ -1,0 +1,8 @@
+#risultato{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+p{
+  padding: 1%;
+}
