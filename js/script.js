@@ -6,21 +6,26 @@ var testo;
 var container = "";
 var stampa = document.getElementById("risultato");
 
-// stampa i num da 0 a 100
+// ciclo che va da 0 a 100
 for (var i = 0; i <= 100 ; i++) {
-  testo = i;
+  testo = i; // la variabile testo salva il contenuto della i
 
   if (testo !== 0) {
+    // se il numero e' multiplo sia di 3 che di 5
     if ((i % 3 === 0) && (i % 5 === 0)) {
-      testo = "fizzbuzz";
+      // poni la variabile uguale a fizzbuzz
+      testo = ("fizzbuzz").fontcolor("red");
       // se il numero e' un multiplo di 3
     } else if (i % 3 === 0) {
-      testo = "fizz";
+      // poni la variabile uguale a fizz
+      testo = ("fizz").fontcolor("orange");
       // se il numero e' un multiplo di 5
     }else if (i % 5 === 0) {
-      testo = "buzz";
+      // poni la variabile uguale a buzz
+      testo = ("buzz").fontcolor("blue");
     }
   }
+  // output
   container = container + testo + "<br>";
   stampa.innerHTML = container;
   console.log(testo);
