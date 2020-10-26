@@ -3,6 +3,8 @@
 // Per i numeri che sono sia multipli di 3 che di 5 stampi “FizzBuzz”.
 
 var testo;
+var container = "";
+var stampa = document.getElementById("risultato");
 
 // stampa i num da 0 a 100
 for (var i = 0; i <= 100 ; i++) {
@@ -19,5 +21,7 @@ for (var i = 0; i <= 100 ; i++) {
       testo = "buzz";
     }
   }
+  container = container + testo + "<br>";
+  stampa.innerHTML = container;
   console.log(testo);
 }
