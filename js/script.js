@@ -3,7 +3,7 @@
 // Per i numeri che sono sia multipli di 3 che di 5 stampi “FizzBuzz”.
 
 var testo;
-var container = "";
+// var container = "";
 var stampa = document.getElementById("risultato");
 
 // ciclo che va da 0 a 100
@@ -26,7 +26,9 @@ for (var i = 0; i <= 100 ; i++) {
     }
   }
   // output
-  container = container + "<p>" + testo + "</p>";
-  stampa.innerHTML = container;
+  // container = container + "<p>" + testo + "</p>";
+  // stampa.innerHTML = container;
+  stampa.innerHTML += "<p>" + testo + "</p>" ; // non e' neccessario utilizzare un container
+
   console.log(testo);
 }
